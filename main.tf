@@ -29,10 +29,3 @@ resource "aws_vpc" "main" {
     Name = "main"
   }
 }
-
-
-output "vpc_id" {
-  value = vpc_id.main.id
-  description = "VPC id."
-  sensitive = false
-}
